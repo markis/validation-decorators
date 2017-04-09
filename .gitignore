@@ -1,0 +1,8 @@
+/.vscode
+/.indea
+/coverage
+/node_modules
+/tmp
+
+.DS_Store
+index.js
