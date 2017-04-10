@@ -14,9 +14,9 @@ export function validate(target: Object): Validation {
 
   const errors = keys
     .map(key => {
-      const value = Reflect.get(target, key);
+      const value = target[key];
       return (validationMap.get(key) || [])
-        .filter(isValid => !isValid(value))
+        .filter(isValid => !isValid.call(target, value))
         .map(func => messageMap.get(func))
         .map(handleMessage(key));
     })

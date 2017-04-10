@@ -1,5 +1,5 @@
 var typescript = require('rollup-plugin-ts').default;
-const tsconfig = require("./src/tsconfig.json");
+const tsconfig = require("./tsconfig.json");
 
 module.exports = {
   entry: './src/index.ts',

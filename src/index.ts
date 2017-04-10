@@ -13,3 +13,5 @@ export { type } from './decorators/type';
 export { uuid } from './decorators/uuid';
 
 export { validate } from './validation/validator';
+
+export * from './interfaces/index';
