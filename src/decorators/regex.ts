@@ -1,5 +1,5 @@
 import { base } from './base';
-import { MessageFunc } from '../interfaces/MessageFunc';
+import { MessageFunc } from '../interfaces/index';
 
 /**
  * Validate property against a Regular Expression

@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "outDir": "tmp",
+    "outDir": "./tmp",
     "module": "commonjs",
     "target": "es5",
     "lib": [ "es6" ],
+    "noEmit": false,
     "inlineSourceMap": false,
     "noUnusedParameters": false,
     "noUnusedLocals": false,

@@ -1,7 +1,5 @@
 import { base } from './base';
-import { MessageFunc } from '../interfaces/MessageFunc';
-import { ValidateFunc } from '../interfaces/ValidateFunc';
-
+import { MessageFunc, ValidateFunc } from '../interfaces/index';
 /**
  * Custom validation decorator
  * 

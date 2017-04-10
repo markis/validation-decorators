@@ -5,4 +5,5 @@
 /tmp
 
 .DS_Store
-index.js
+/index.js
+/index.d.ts

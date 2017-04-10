@@ -1,3 +1,5 @@
+import 'reflect-metadata';
+
 export { custom } from './decorators/custom';
 export { max } from './decorators/max';
 export { maxLength } from './decorators/maxLength';

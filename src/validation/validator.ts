@@ -1,8 +1,8 @@
 import { METADATA_KEY } from '../constants/metadataKey';
-import { MessageFunc, Store, Validation } from '../interfaces';
+import { MessageFunc, Store, ValidateFunc, Validation } from '../interfaces/index';
 
 /**
- * Validate all the decorators
+ * Validate all of the decorators
  * 
  * @param target Object to validate
  */

@@ -1,9 +1,10 @@
 {
   "name": "validation-decorators",
   "description": "Declarative validators for javascript objects",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "files": [
     "index.js",
+    "index.d.ts",
     "package.json",
     "README.md"
   ],
@@ -13,7 +14,9 @@
   },
   "scripts": {
     "prepublish": "in-publish && npm run build || not-in-publish",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "build:declaration": "dts-generator --name validation-decorators --project . --out index.d.ts && npm run build:addfix ",
+    "build:addfix": "echo \"declare module 'validation-decorators' {\n  export * from 'validation-decorators/index'; \n}\" >> index.d.ts"
   },
   "devDependencies": {
     "in-publish": "^2.0.0",

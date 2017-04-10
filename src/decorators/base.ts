@@ -1,5 +1,5 @@
 import { METADATA_KEY } from '../constants/metadataKey';
-import { MessageFunc, Store, ValidateFunc } from '../interfaces';
+import { MessageFunc, Store, ValidateFunc } from '../interfaces/index';
 import { setupValidationHarness } from '../validation/setup';
 
 /**
