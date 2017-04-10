@@ -1,7 +1,7 @@
 {
   "name": "validation-decorators",
   "description": "Declarative validators for javascript objects",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "files": [
     "index.js",
     "package.json",
