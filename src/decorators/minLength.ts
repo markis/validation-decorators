@@ -1,9 +1,9 @@
-import { base } from './base';
 import { MessageFunc } from '../interfaces/index';
+import { base } from './base';
 
 /**
  * Minimum length validator
- * 
+ *
  * @param minLength Minimum allowable length
  * @param message User provided message function or string
  */

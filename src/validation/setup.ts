@@ -1,14 +1,14 @@
 import { METADATA_KEY } from '../constants/metadataKey';
 
-export function setupValidationHarness(target: Object): void {
+export function setupValidationHarness(target: object): void {
   if (Reflect.getMetadata(METADATA_KEY, target)) {
     return;
   }
-  
+
   const validation = {
     fields: [],
-    operations: new Map(),
-    messages: new Map()
+    messages: new Map(),
+    operations: new Map()
   };
   Reflect.defineMetadata(METADATA_KEY, validation, target);
 }

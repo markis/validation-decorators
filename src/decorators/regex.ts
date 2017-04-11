@@ -1,9 +1,9 @@
-import { base } from './base';
 import { MessageFunc } from '../interfaces/index';
+import { base } from './base';
 
 /**
  * Validate property against a Regular Expression
- * 
+ *
  * @param regex Regular expression to check against
  * @param message Message to return to the consumer
  */

@@ -4,14 +4,14 @@ import { setupValidationHarness } from '../validation/setup';
 
 /**
  * Base validation decorator for all other decorators
- * 
+ *
  * @param validate Validation method
  * @param defaultMessage Default message function or string
  * @param message User provided message function or string
  */
-export function base(validate: ValidateFunc, defaultMessage: MessageFunc, 
+export function base(validate: ValidateFunc, defaultMessage: MessageFunc,
                      message: MessageFunc = defaultMessage ) {
-  return (target: Object, propertyKey: string | symbol) => {
+  return (target: object, propertyKey: string | symbol) => {
     setupValidationHarness(target);
 
     const setup: Store = Reflect.getMetadata(METADATA_KEY, target);
@@ -27,5 +27,5 @@ export function base(validate: ValidateFunc, defaultMessage: MessageFunc,
     } else {
       validationMap.set(propertyKey, [validate]);
     }
-  }
+  };
 }

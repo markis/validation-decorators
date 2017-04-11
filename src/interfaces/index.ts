@@ -1,8 +1,8 @@
-export type MessageFunc = string | ((propertyKey: string | symbol) => string)
+export type MessageFunc = string | ((propertyKey: string | symbol) => string);
 export type ValidateFunc = (value: any) => boolean;
 
 export interface Store {
-  fields: (string | symbol)[];
+  fields: Array<string | symbol>;
   operations: Map<string | symbol, ValidateFunc[]>;
   messages: Map<ValidateFunc, MessageFunc>;
 }
